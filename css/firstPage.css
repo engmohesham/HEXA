@@ -183,7 +183,7 @@ section h2 {
 
 .rightSide {
     background-color: var(--main-color);
-    width: 60%;
+    width: 70%;
     justify-content: flex-start;
     align-items: center;
     border-bottom-right-radius: 1.5rem;
@@ -499,7 +499,7 @@ canvas {
     }
 
     .button {
-        width: 100%;
+        width: 500px;
         margin: 10px 0;
     }
 
