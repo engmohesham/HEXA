@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--main-color);
+	font-family: Montserrat, sans-serif;
+}
+
+:root {
+	--fir-color: rgb(36, 164, 138);
+	--sec-color: rgb(211, 79, 79);
+	--thi-color: rgb(67, 91, 175);
+	--fou-color: lightsalmon;
+	--main-color: #151723;
+	--whi-color: #fff;
+
+
+	--main-tra: .3s all ease-in-out;
+	--sec-tra: .5s all ease-in-out;
+}
+
+/* 
+ #131521 
+ #181A26 
+ #1D2031 
+ #457174 
+ #7C1A41 
+ #0B94CB 
+ #1EB1DA 
+ #CD3463 
+ #AA1545 
+ #2B45FC
+ #141720
+ #CB2458
+ #FD2741
+ */
+
+/*
+ * Selection color
+ */
+ ::-moz-selection {
+	background-color: #fff;
+	color: var(--main-color);
+  }
+  
+  ::selection {
+	background-color: #fff;
+	color: var(--main-color);
+  }
+  
+  /*
+   * Scroll color
+   */
+  
+  body::-webkit-scrollbar {
+	width: 13px;
+	background-color: #ffffff;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #151723;
+	border-radius: 0 0 10px 10px;
+  }
+

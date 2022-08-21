@@ -1,0 +1,290 @@
+
+#show-settings {
+	position: fixed;
+	right: 0.75em;
+	bottom: 0.75em;
+	padding: 0.1em 0.5em;
+	border-radius: 1em;
+	color: hsl(0, 0%, 60%);
+	background: hsl(220, 16%, 18%);
+	width: 7em;
+	height: 2.35em;
+	z-index: 1;
+	box-shadow: -0.2em 0.2em 0.7em -0.4em hsl(0, 0%, 0%);
+}
+
+#show-settings:hover {
+	background: hsl(220, 16%, 22%);
+	color: hsl(220, 0%, 64%);
+	cursor: pointer;
+}
+
+.show-settings-elements {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.show-settings-icon {
+	padding-top: 0.2em;
+}
+
+.show-settings-text {
+	font-size: 0.9em;
+	padding: 0.5em 0.4em 0 0.2em;
+	vertical-align: top;
+}
+
+.settings {
+	background: hsl(220, 16%, 26%);
+	color: hsl(0, 0%, 60%);
+	position: fixed;
+	bottom: 0.75em;
+	right: 0.75em;
+	width: 6.9em;
+	height: 2.3em;
+	overflow: hidden;
+	border-radius: 1em;
+	transition: width 0.5s, height 0.5s;
+	z-index: 0;
+	
+}
+
+.settings p {
+	font-size: 0.9em;
+}
+
+.settings-head {
+	text-align: right;
+	background: hsl(220, 16%, 18%);
+	padding: 0.4em 1em 0.2em;
+	border-radius: 1em 1em 0 0;
+}
+
+.settings-head span {
+	font-size: 1.5em;
+	color: hsl(220, 16%, 18%);
+	transition: color 0.5s;
+}
+
+.settings-head span:hover {
+	cursor: pointer;
+}
+
+.settings-body {
+	position: fixed;
+	padding: 0.5em 1.5em;
+	/* 	min-width: 20em; */
+	display: flex;
+
+}
+
+.settings-pane.left {
+	min-width: 12em;
+}
+
+.settings-pane.right {
+	display: grid;
+	grid-template-columns: repeat(3 , 100px);
+}
+
+.noUi-target {
+	border: 1px solid hsl(0, 0%, 75%);
+	border-radius: 2px;
+}
+
+.noUi-handle {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	width: 16px;
+	height: 16px;
+	background: hsl(180, 60%, 45%);
+	border-radius: 100%;
+}
+
+.noUi-handle:focus {
+	outline: none;
+}
+
+.slider-area {
+	margin-top: 16px;
+	width: 300px;
+	height: 60px;
+}
+
+p.slider-title,
+p.switch-title {
+	font-size: 0.85em;
+}
+
+.slider {
+	margin-top: 10px;
+}
+
+.value {
+	/* 	font-size: 0.8em; */
+	background: hsl(0, 0%, 45%);
+	font-family: monospace;
+	color: hsl(0, 0%, 95%);
+	padding: 0.1em 0.3em;
+	display: inline-block;
+	width: 28px;
+	border-radius: 8px;
+	text-align: right;
+}
+
+.control-area {
+	margin-top: 16px;
+}
+
+
+
+.toggle-switch {
+	padding: 0.333em 0;
+	font-size: 0.75em;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.toggle {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: .2s;
+}
+
+.toggle-shape {
+	background-color: hsl(0, 0%, 60%);
+}
+
+.toggle:before {
+	position: absolute;
+	content: "";
+	height: 13px;
+	width: 14px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: .2s;
+}
+
+input:checked+.toggle:before {
+	transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.toggle.round {
+	border-radius: 10px;
+}
+
+.toggle.round:before {
+	border-radius: 50%;
+}
+
+.switch-title {
+	padding-bottom: 0.5em;
+}
+
+.radio-buttons {
+	font-size: 0.75em;
+}
+
+input[name="bg"] {
+	margin-bottom: 0.75em;
+}
+
+
+/* Icon Of Color */
+
+
+#ring {
+	fill: rgb(179, 71, 241);
+	visibility: hidden;
+}
+
+#checkMark {
+	visibility: hidden;
+}
+
+#svg-img.selected #ring,
+#svg-img.selected #checkMark {
+	visibility: visible;
+}
+
+#circle-1 {
+	fill: url('#gradient-1');
+	stroke: var(--cr-theme-icon-stroke-color,
+			var(--cr-theme-icon-frame-color));
+	stroke-width: 1;
+}
+#circle-2 {
+	fill: url('#gradient-2');
+	stroke: var(--cr-theme-icon-stroke-color,
+			var(--cr-theme-icon-frame-color));
+	stroke-width: 1;
+}
+#circle-3 {
+	fill: url('#gradient-3');
+	stroke: var(--cr-theme-icon-stroke-color,
+			var(--cr-theme-icon-frame-color));
+	stroke-width: 1;
+}
+
+
+#checkMark circle {
+	fill: rgb(113, 17, 168) !important;
+}
+
+#checkMark path {
+	fill: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	#checkMark circle {
+		fill: rgb(113, 17, 168) !important;
+	}
+
+	#checkMark path {
+		fill: white;
+	}
+
+}
+.slider-area circle {
+	cursor: pointer;
+}
+.slider-area circle:hover {
+	border: 2px solid ;
+}
+
+.left-1 {
+	stop-color: rgba(102, 13, 51, 1);
+}
+.right-1 {
+	stop-color: rgba(160, 20, 79, 1);
+}
+.left-2 {
+	stop-color: #462a68 ;
+}
+.right-2 {
+	stop-color: rgba(109, 65, 161, 1);
+}
+.left-3 {
+	stop-color: rgba(132, 173, 234, 1);
+}
+.right-3 {
+	stop-color: rgba(203, 220, 247, 1);
+}
