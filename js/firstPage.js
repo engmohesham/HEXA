@@ -13,7 +13,7 @@ function showSettings() {
 		settings.style.zIndex = '2'
 		document.querySelector('#show-settings').style.boxShadow = 'none'
 		settings.style.boxShadow = '-0.2em 0.2em 0.7em -0.4em hsl(0, 0%, 0%)'
-		settings.style.height = '18em'
+		settings.style.height = '15em'
 		settings.style.width = '48em'
 		document.querySelector('.settings-head span').style.color = '#fff'
 	}, 125)
@@ -22,7 +22,7 @@ function showSettings() {
 function hideSettings() {
 	var settings = document.querySelector('.settings')
 	document.querySelector('.settings-head span').style.color = 'hsl(220, 16%, 18%)'
-	settings.style.height = '2em'
+	settings.style.height = '2.3em'
 	settings.style.width = '6.9em'
 	setTimeout(function () {
 		settings.style.zIndex = '0'
