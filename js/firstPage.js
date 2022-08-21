@@ -13,7 +13,7 @@ function showSettings() {
 		settings.style.zIndex = '2'
 		document.querySelector('#show-settings').style.boxShadow = 'none'
 		settings.style.boxShadow = '-0.2em 0.2em 0.7em -0.4em hsl(0, 0%, 0%)'
-		settings.style.height = '15em'
+		settings.style.height = '13em'
 		settings.style.width = '48em'
 		document.querySelector('.settings-head span').style.color = '#fff'
 	}, 125)
